@@ -2,11 +2,16 @@
 
 * {
     font-family: "Poppins";
-    background-color: "#FAFBFC" !important;
+    /* background-color: "#FAFBFC" !important; */
 }
 
 .btn{
     border-radius: 10px;
-    margin: 5px;
+    margin: 7px;
     color: aliceblue !important;
+}
+
+.apps-bar {
+    padding: 3px 81px;
+    box-shadow: 0px 6px 10px rgba(170, 170, 170, 0.1) !important;
 }

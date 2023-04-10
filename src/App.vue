@@ -1,43 +1,28 @@
 <template>
-  <v-app>
-    <v-app-bar app class="apps-bar">
-      <v-toolbar-title>Store</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-      </v-btn>
-      <v-spacer></v-spacer>
-      <v-btn color="btnsecondary" class="btn" depressed>Sign Up </v-btn>
-      <v-btn color="btnprimary" class="btn" depressed>Login </v-btn>
-    </v-app-bar>
-    <v-main>
-      <LandingPage />
-    </v-main>
-  </v-app>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
-<script>
-import LandingPage from "./components/LandingPage.vue";
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-export default {
-  name: "App",
+nav {
+  padding: 30px;
 
-  components: {
-    LandingPage,
-  },
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-  data: () => ({
-    //
-  }),
-};
-</script>
-<style scoped>
-.apps-bar {
-  padding: 3px 81px;
-  background: #ffff !important;
-  box-shadow: 0px 6px 10px rgba(170, 170, 170, 0.1) !important;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
