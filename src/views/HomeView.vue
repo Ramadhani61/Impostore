@@ -1,29 +1,36 @@
 <template>
   <v-app class="">
-    <v-app-bar app class="apps-bar" color="white">
-      <v-toolbar-title>Impo Store</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <div>
-        <span class="ma-3">Home</span>
-        <span class="ma-3">Category</span>
-        <span class=""
-          >Product
+    <v-container class="pa-0">
+      <v-app-bar app class="apps-bar" color="white">
+        <span class="font-weight-reguler text-title">Impo Store</span>
+
+        <v-spacer></v-spacer>
+        <!-- <v-btn-toggle v-model="toggle_exclusive" borderless mandatory> -->
+        <v-btn class="text-capitalize font-weight-light" text>Home</v-btn>
+        <v-btn class="text-capitalize font-weight-light" text>Category</v-btn>
+        <v-btn class="text-capitalize font-weight-light" text>
+          Product
           <span>
-            <v-badge color="btnprimary" dot class="ma-1">
+            <v-badge color="btnprimary" dot class="">
               <v-icon small> $ic_tas </v-icon>
             </v-badge>
           </span>
-        </span>
-      </div>
-      <v-spacer></v-spacer>
-      <v-btn color="btnsecondary" class="btn" depressed>Sign Up </v-btn>
-      <v-btn color="btnprimary" class="btn" depressed>Login </v-btn>
-    </v-app-bar>
-    <v-main class="mt-2">
-      <v-container class="">
-        <LandingPage />
-      </v-container>
-    </v-main>
+        </v-btn>
+        <!-- </v-btn-toggle> -->
+        <v-spacer></v-spacer>
+        <v-btn color="btnsecondary" class="btn text-capitalize mr-2" depressed
+          >Sign Up
+        </v-btn>
+        <v-btn color="btnprimary" class="btn text-capitalize" depressed
+          >Login
+        </v-btn>
+      </v-app-bar>
+      <v-main class="mt-2 background">
+        <v-container class="">
+          <LandingPage />
+        </v-container>
+      </v-main>
+    </v-container>
   </v-app>
 </template>
 
@@ -37,3 +44,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>

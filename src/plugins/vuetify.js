@@ -5,6 +5,8 @@ import "font-awesome/css/font-awesome.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import colors from "vuetify/lib/util/colors";
 import ic_tas from "../assets/icons/logo_product.vue";
+import ic_arrowright from "../assets/icons/arrow_right.vue";
+import ic_arrowleft from "../assets/icons/arrow_left.vue";
 Vue.use(Vuetify);
 
 export default new Vuetify({
@@ -14,6 +16,12 @@ export default new Vuetify({
       ic_tas: {
         component: ic_tas,
       },
+      ic_arrowright: {
+        component: ic_arrowright,
+      },
+      ic_arrowleft: {
+        component: ic_arrowleft,
+      },
     },
   },
   theme: {
@@ -21,7 +29,7 @@ export default new Vuetify({
       light: {
         btnprimary: "#6D214F",
         btnsecondary: "#B33771",
-        imam: "#B33771",
+        background: "#FAFBFC",
       },
       dark: {
         primary: colors.blue.lighten3,
