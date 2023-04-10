@@ -19,7 +19,11 @@
       <v-btn color="btnsecondary" class="btn" depressed>Sign Up </v-btn>
       <v-btn color="btnprimary" class="btn" depressed>Login </v-btn>
     </v-app-bar>
-    <LandingPage />
+    <v-main class="mt-2">
+      <v-container class="">
+        <LandingPage />
+      </v-container>
+    </v-main>
   </v-app>
 </template>
 
