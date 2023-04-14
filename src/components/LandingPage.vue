@@ -25,7 +25,7 @@
       <v-card-text class="white--text"> Product Category </v-card-text>
     </v-card>
     <div class="mt-6">
-      <div class="d-flex flex-row" width="200px">
+      <div class="d-flex flex-row flex-wrap" width="200px">
         <v-card
           style="filter: drop-shadow(0px 4px 20px rgba(168, 168, 168, 0.1))"
           class="mr-auto card-product"
@@ -53,7 +53,7 @@
       <v-col cols="12" md="6" sm="8" class="offset-md-2">
         <v-text-field label="Search Something" solo dense></v-text-field
       ></v-col>
-      <v-col cols="12" md="2" sm="8" class="">
+      <v-col cols="12" md="2" sm="12" class="">
         <v-btn
           color="btnprimary"
           class="btn text-capitalize d-flex"
