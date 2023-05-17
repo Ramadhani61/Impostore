@@ -1,5 +1,5 @@
 <template>
-  <v-app class="">
+  <v-app>
     <v-app-bar app class="apps-bar" color="white" absolute>
       <div class="">
         <span class="font-weight-reguler text-title">Impo Store</span>
@@ -28,22 +28,16 @@
         >Login
       </v-btn>
     </v-app-bar>
-    <v-main class="mt-2 background">
+    <v-main style="background-color: whitesmoke">
       <v-container class="">
-        <LandingPage />
+        <router-view />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import LandingPage from "@/components/LandingPage.vue";
-
-export default {
-  components: {
-    LandingPage,
-  },
-};
+export default {};
 </script>
 
 <style scoped></style>
